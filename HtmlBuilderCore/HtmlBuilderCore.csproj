@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Elements\HtmlHeader.cs" />
     <Compile Include="Elements\HtmlImage.cs" />
     <Compile Include="Elements\HtmlLink.cs" />
     <Compile Include="Elements\HtmlPara.cs" />
+    <Compile Include="Elements\HtmlTable.cs" />
     <Compile Include="HtmlPage.cs" />
     <Compile Include="IHtmlElement.cs" />
+    <Compile Include="invalidInputException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

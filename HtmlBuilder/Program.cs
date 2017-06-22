@@ -12,10 +12,7 @@ namespace HtmlBuilder
     {
         static void Main(string[] args)
         {
-            //Testing();
-
-           
-
+            Testing();
         }
 
         private static void Testing()
@@ -28,19 +25,41 @@ namespace HtmlBuilder
             pr.Text = "My paragraph";
 
             HtmlLink lnk = new HtmlLink();
-            lnk.LinkSrc = "http://yahoo/.com";
+            lnk.LinkSrc = "https://in.yahoo.com/";
             lnk.LinkText = "Yahooo!!";
+
+            HtmlHeader head = new HtmlHeader();
+            head.content_string = "Heading";
+            head.size_Of_string = 1;
+
+            HtmlTable table = new HtmlTable();
+            table.rows = 3;
+            table.columns = 3;
+            // table.x();
+            try
+            {
+                table.AddRow("Abd", "Def", "Det", "jdfgh", "Rger", "gfdfg", "fgdfg", "retert", "iopppoo", "");
+
+            }
+            catch (invalidInputException iie)
+            {
+                P(iie.Message.ToString());
+            }
 
             HtmlPage page = new HtmlPage();
             page.Title = "My fabulous page";
             page.BodyColor = "yellow";
+            page.Elements.Add(head);
             page.Elements.Add(img);
             page.Elements.Add(pr);
 
             page.Elements.Add(lnk);
-
+            page.Elements.Add(table);
 
             var html = page.GetPageHtml();
+
+
+
         }
 
         static void P(string s)
@@ -48,7 +67,7 @@ namespace HtmlBuilder
             Console.WriteLine(s);
         }
 
-        static string ReadString(string msg)
+        public static string ReadString(string msg)
         {
             P(msg);
             return Console.ReadLine();
@@ -63,6 +82,6 @@ namespace HtmlBuilder
         }
 
 
-        
+
     }
 }
