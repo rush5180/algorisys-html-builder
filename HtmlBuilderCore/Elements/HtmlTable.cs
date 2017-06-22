@@ -40,7 +40,7 @@ namespace HtmlBuilderCore.Elements
                     }
                     getTable += "</tr>";
                     list.Add(getTable);
-                    getTable = "";
+                    //getTable = "";
                 }
 
                 foreach (object tableData in list)
