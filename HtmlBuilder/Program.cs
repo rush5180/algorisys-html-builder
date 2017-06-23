@@ -29,44 +29,36 @@ namespace HtmlBuilder
             lnk.LinkText = "Yahooo!!";
 
             HtmlHeader head = new HtmlHeader();
-            head.content_string = "Heading";
-            head.size_Of_string = 1;
+            head.ContentString = "Heading";
+            head.SizeOfString = 1;
 
             HtmlTable table = new HtmlTable();
-            table.rows = 3;
-            table.columns = 3;
-            // table.x();
+            table.Rows = 3;
+            table.Columns = 3;
             try
             {
-                table.AddRow("Abd", "Def", "Det", "jdfgh", "Rger", "gfdfg", "fgdfg", "retert", "iopppoo", "");
-
+                table.AddRowsToList("Abd","hgjh", "Def", "Det", "jdfgh", "gfdfg", "fgdfg", "retert", "iopppoo");
             }
-            catch (invalidInputException iie)
+            catch (InvalidInputException iie)
             {
                 P(iie.Message.ToString());
             }
-
             HtmlPage page = new HtmlPage();
             page.Title = "My fabulous page";
             page.BodyColor = "yellow";
             page.Elements.Add(head);
             page.Elements.Add(img);
             page.Elements.Add(pr);
-
             page.Elements.Add(lnk);
             page.Elements.Add(table);
 
             var html = page.GetPageHtml();
-
-
-
         }
 
         static void P(string s)
         {
             Console.WriteLine(s);
         }
-
         public static string ReadString(string msg)
         {
             P(msg);
@@ -80,8 +72,5 @@ namespace HtmlBuilder
         {
             return Console.ReadKey().Key;
         }
-
-
-
     }
 }

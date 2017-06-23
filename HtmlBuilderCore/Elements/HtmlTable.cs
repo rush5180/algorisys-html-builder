@@ -8,63 +8,46 @@ namespace HtmlBuilderCore.Elements
 {
     public class HtmlTable : IHtmlElement
     {
-
-        public int rows { get; set; }
-        public int columns { get; set; }
-        public string values { get; set; }
-        public List<object> list { get; set; }
-        int i, j;
-
+        public int Rows { get; set; }
+        public int Columns { get; set; }
+        public List<object> RowsList { get; set; }
+        
         public HtmlTable()
         {
-            list = new List<object>();
+            RowsList = new List<object>();
         }
-        public string getTable = "";
-        public void AddRow(params string[] rowdata)
+        public string Singular = "";
+        public void AddRowsToList(params string[] rowdata)
         {
-            if (rowdata.Length > (this.columns * this.rows))
+            int i, j;
+            if (rowdata.Length > (this.Columns * this.Rows))
             {
-                throw new invalidInputException("Please Enter Valid Input");
+                throw new InvalidInputException("Please Enter Valid Input");
             }
             else
             {
                 int c = 0;
-                for (i = 0; i < this.rows; i++)
+                for (i = 0; i < this.Rows; i++)
                 {
-                    getTable += "<tr>";
-                    for (j = 0; j < this.columns; j++)
+                    Singular += "<tr>";
+                    for (j = 0; j < this.Columns; j++)
                     {
-                        // arr_table[i, j] = Console.ReadLine();
-                        getTable += "<td>" + rowdata[c++] + "</td>";
-                        //c++;
+                        Singular += "<td>" + rowdata[c++] + "</td>";
                     }
-                    getTable += "</tr>";
-                    list.Add(getTable);
-                    //getTable = "";
+                    Singular += "</tr>";
+                    RowsList.Add(Singular);
+                    Singular = "";
                 }
-
-                foreach (object tableData in list)
-                {
-                    getTable += tableData;
-                }
-
             }
-
-        }
+         }
         public string GetHtmlString()
         {
-            // string[,] arr_table = new string[this.rows, this.columns];
-
-
-            // getTable += "</table>";
-
-            return string.Format("<table border='1'>{0}</table>", this.getTable);
+            foreach (object TableData in RowsList)
+            {
+                Singular += TableData;
+            }
+            return string.
+                Format("<table border='1'>{0}</table>", this.Singular);
         }
-
-
-
-
-
-
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HtmlBuilderCore
 {
-    public class invalidInputException : Exception
+    public class InvalidInputException : Exception
     {
-        public invalidInputException(string message)
+        public InvalidInputException(string message)
            : base(message)
         {
         }
