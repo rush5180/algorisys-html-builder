@@ -37,19 +37,11 @@ namespace HtmlBuilderCore.Elements
                     SingleRowToList += "<tr>";
                     for (j = 0; j < this.Columns; j++)
                     {
-                        if (RowDataLength != 0)
-                        {
-                            SingleRowToList += "<td>" + rowdata[c++] + "</td>";
-                            RowDataLength--;
-                        }
-                        else
-                        {
-                            SingleRowToList += "<td></td>";
-                        }
+                        Singular += "<td>" + rowdata[c++] + "</td>";
                     }
-                    SingleRowToList += "</tr>";
-                    RowsList.Add(SingleRowToList);
-                    SingleRowToList = "";
+                    Singular += "</tr>";
+                    RowsList.Add(Singular);
+                    Singular = "";
                 }
             }
          }
