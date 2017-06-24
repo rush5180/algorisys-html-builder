@@ -11,7 +11,7 @@ namespace HtmlBuilderCore.Elements
         public int Rows { get; set; }
         public int Columns { get; set; }
         public List<object> RowsList { get; set; }
-        
+               
         public HtmlTable()
         {
             RowsList = new List<object>();
@@ -19,7 +19,9 @@ namespace HtmlBuilderCore.Elements
         public string Singular = "";
         public void AddRowsToList(params string[] rowdata)
         {
+            
             int i, j;
+           
             if (rowdata.Length > (this.Columns * this.Rows))
             {
                 throw new InvalidInputException("Please Enter Valid Input");
@@ -27,12 +29,21 @@ namespace HtmlBuilderCore.Elements
             else
             {
                 int c = 0;
+                int RowDataLength = rowdata.Length;
                 for (i = 0; i < this.Rows; i++)
                 {
                     Singular += "<tr>";
                     for (j = 0; j < this.Columns; j++)
                     {
-                        Singular += "<td>" + rowdata[c++] + "</td>";
+                        if (RowDataLength != 0)
+                        {
+                            Singular += "<td>" + rowdata[c++] + "</td>";
+                            RowDataLength--;
+                        }
+                        else
+                        {
+                            Singular += "<td></td>";
+                        }
                     }
                     Singular += "</tr>";
                     RowsList.Add(Singular);
