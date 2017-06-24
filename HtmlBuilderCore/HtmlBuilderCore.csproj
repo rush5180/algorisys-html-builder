@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Elements\HtmlHeader.cs" />
+    <Compile Include="Elements\HtmlHr.cs" />
     <Compile Include="Elements\HtmlImage.cs" />
     <Compile Include="Elements\HtmlLink.cs" />
     <Compile Include="Elements\HtmlPara.cs" />
