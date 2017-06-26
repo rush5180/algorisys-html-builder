@@ -40,7 +40,7 @@ namespace HtmlBuilder
             {
                 table.AddRowsToList("A","B", "C", "D", "E", "F");
             }
-            catch (InvalidInputException iie)
+            catch (Exception iie)
             {
                 P(iie.Message.ToString());
             }
