@@ -31,15 +31,16 @@ namespace HtmlBuilder
             HtmlHeader head = new HtmlHeader();
             head.ContentString = "Heading";
             head.SizeOfString = 1;
-
+            
             HtmlTable table = new HtmlTable();
             table.Rows = 3;
             table.Columns = 3;
+          
             try
             {
-                table.AddRowsToList("Abd","hgjh", "Def", "Det", "jdfgh", "gfdfg", "fgdfg", "retert", "iopppoo");
+                table.FillData("A","B", "C", "D", "E", "F");
             }
-            catch (InvalidInputException iie)
+            catch (Exception iie)
             {
                 P(iie.Message.ToString());
             }
