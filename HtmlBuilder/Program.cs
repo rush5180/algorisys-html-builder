@@ -38,7 +38,7 @@ namespace HtmlBuilder
           
             try
             {
-                table.AddRowsToList("A","B", "C", "D", "E", "F");
+                table.FillData("A","B", "C", "D", "E", "F");
             }
             catch (Exception iie)
             {
