@@ -16,10 +16,8 @@ namespace HtmlBuilderCore.Elements
         {
             RowsList = new List<object>();
         }
-        public string SingleRowToList = "";
-        public string Singular;
-
-        public void FillData(params string[] rowdata)
+        public string Singular = "";
+        public void AddRowsToList(params string[] rowdata)
         {
             
             int i, j;
@@ -37,11 +35,19 @@ namespace HtmlBuilderCore.Elements
                     SingleRowToList += "<tr>";
                     for (j = 0; j < this.Columns; j++)
                     {
-                        Singular += "<td>" + rowdata[c++] + "</td>";
+                        if (RowDataLength != 0)
+                        {
+                            Singular += "<td>" + rowdata[c++] + "</td>";
+                            RowDataLength--;
+                        }
+                        else
+                        {
+                            Singular += "<td></td>";
+                        }
                     }
-                    Singular += "</tr>";
-                    RowsList.Add(Singular);
-                    Singular = "";
+                    SingleRowToList += "</tr>";
+                    RowsList.Add(SingleRowToList);
+                    SingleRowToList = "";
                 }
             }
          }
