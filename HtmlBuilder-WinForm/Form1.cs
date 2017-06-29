@@ -14,89 +14,74 @@ using System.Windows.Forms;
 
 namespace HtmlBuilder_WinForm
 {
-    public partial class Form1 : Form
+    public partial class Html_Builder_Winform : Form
     {
-        public Form1()
+        public Html_Builder_Winform()
         {
             InitializeComponent();
         }
         HtmlPage page = new HtmlPage();
-
-     
-      //  HtmlLink lnk = new HtmlLink();
         HtmlTable table = new HtmlTable();
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            page.Title = textBox1.Text;
-            //para.Text = richTextBox1.Text;
-          //  img.ImageSrc = textBox2.Text;
-         //   lnk.LinkSrc = textBox3.Text;
-            //lnk.LinkText = textBox4.Text;
-            table.Columns = Int32.Parse(textBox6.Text);
-            table.Rows = Int32.Parse(textBox5.Text);
-            string[] data = (textBox7.Text).Split(',');
-            table.AddRowsToList(data);
-
-
-
-
-
-          //  page.Elements.Add(img);
-         //   page.Elements.Add(lnk);
-           // page.Elements.Add(para);
-            page.Elements.Add(table);
-
-            
-        }
-        
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var html = page.GetPageHtml();
-            string path = @"C:\Users\tek3\Desktop\HtmlBuilder2.htm";
-
-            // Create the file.
-            using (FileStream fs = File.Create(path, 1024))
-            {
-                StreamWriter writer = new StreamWriter(fs);
-                //   writer.WriteLine("<html><body><table border='2' width='200' height='300'><tr></tr></table></body></html>");
-
-                writer.WriteLine(html.ToString());
-                writer.Close();
-            };
-
-        }
 
         private void Paragraph_Click(object sender, EventArgs e)
         {
             HtmlPara para = new HtmlPara();
-            para.Text = richTextBox1.Text;
+            para.Text = Txt_Paragraph.Text;
             page.Elements.Add(para);
-            richTextBox1.Clear();
+            Txt_Paragraph.Clear();
         }
 
         private void Image_Click(object sender, EventArgs e)
         {
             HtmlImage img = new HtmlImage();
-            img.ImageSrc = textBox2.Text;
+            img.ImageSrc = Txt_Image.Text;
             page.Elements.Add(img);
-            textBox2.Clear();
-
-
+            Txt_Image.Clear();
         }
 
         private void Link_click(object sender, EventArgs e)
         {
             HtmlLink lnk = new HtmlLink();
-            lnk.LinkSrc = textBox3.Text;
-            lnk.LinkText = textBox4.Text;
+            lnk.LinkSrc = Txt_Link.Text;
+            lnk.LinkText = Txt_Link_Text.Text;
             page.Elements.Add(lnk);
-
-            textBox3.Clear();
-            textBox4.Clear();
+            Txt_Link.Clear();
+            Txt_Link_Text.Clear();
         }
 
-      
+        private void Table_click(object sender, EventArgs e)
+        {
+            HtmlTable tab = new HtmlTable();
+
+            tab.Rows = Convert.ToInt32(Txt_Number_Of_Rows.Text);
+            tab.Columns = Convert.ToInt32(Txt_Number_Of_Columns.Text);
+            string[] data = (Txt_Table_Data.Text).Split(',');
+            tab.FillData(data);
+            page.Elements.Add(tab);
+            Txt_Number_Of_Rows.Clear();
+            Txt_Number_Of_Columns.Clear();
+            Txt_Table_Data.Clear();
+           
+        }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            page.Title = Txt_Title.Text;
+            page.BodyColor = Txt_Bg_Colour.Text;
+        }
+
+        private void Create_page_Click(object sender, EventArgs e)
+        {
+            var html = page.GetPageHtml();
+            string path = @"C:\Users\tek3\Desktop\HtmlBuilder8.htm";
+
+            // Create the file.
+            using (FileStream fs = File.Create(path, 1024))
+            {
+                StreamWriter writer = new StreamWriter(fs);
+                writer.WriteLine(html.ToString());
+                writer.Close();
+            };
+        }
     }
 }

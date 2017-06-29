@@ -17,6 +17,7 @@ namespace HtmlBuilderCore.Elements
             RowsList = new List<object>();
         }
         public string SingleRowToList = "";
+        public string Singular;
 
         public void FillData(params string[] rowdata)
         {

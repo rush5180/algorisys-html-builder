@@ -1,6 +1,6 @@
 ﻿namespace HtmlBuilder_WinForm
 {
-    partial class Form1
+    partial class Html_Builder_Winform
     {
         /// <summary>
         /// Required designer variable.
@@ -28,236 +28,294 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Paragraph = new System.Windows.Forms.Button();
-            this.Image = new System.Windows.Forms.Button();
-            this.Link = new System.Windows.Forms.Button();
+            this.Txt_Title = new System.Windows.Forms.TextBox();
+            this.Txt_Image = new System.Windows.Forms.TextBox();
+            this.Txt_Link = new System.Windows.Forms.TextBox();
+            this.Txt_Link_Text = new System.Windows.Forms.TextBox();
+            this.Txt_Number_Of_Rows = new System.Windows.Forms.TextBox();
+            this.Txt_Number_Of_Columns = new System.Windows.Forms.TextBox();
+            this.Txt_Table_Data = new System.Windows.Forms.TextBox();
+            this.lbl_Title = new System.Windows.Forms.Label();
+            this.lbl_Paragraph = new System.Windows.Forms.Label();
+            this.lbl_Image = new System.Windows.Forms.Label();
+            this.lbl_Link = new System.Windows.Forms.Label();
+            this.lbl_Link_Text = new System.Windows.Forms.Label();
+            this.lbl_Number_Of_Rows = new System.Windows.Forms.Label();
+            this.lbl_Number_Of_Columns = new System.Windows.Forms.Label();
+            this.lbl_Table_Data = new System.Windows.Forms.Label();
+            this.Submit = new System.Windows.Forms.Button();
+            this.Create_page = new System.Windows.Forms.Button();
+            this.Add_Paragraph = new System.Windows.Forms.Button();
+            this.Add_Image = new System.Windows.Forms.Button();
+            this.Add_Link = new System.Windows.Forms.Button();
+            this.Txt_Paragraph = new System.Windows.Forms.TextBox();
+            this.Txt_Bg_Colour = new System.Windows.Forms.TextBox();
+            this.lbl_Bg_Colour = new System.Windows.Forms.Label();
+            this.Add_Table = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Txt_Title
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.Txt_Title.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Title.Location = new System.Drawing.Point(147, 21);
+            this.Txt_Title.Name = "Txt_Title";
+            this.Txt_Title.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Title.TabIndex = 0;
             // 
-            // textBox2
+            // Txt_Image
             // 
-            this.textBox2.Location = new System.Drawing.Point(162, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.Txt_Image.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Image.Location = new System.Drawing.Point(417, 63);
+            this.Txt_Image.Name = "Txt_Image";
+            this.Txt_Image.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Image.TabIndex = 1;
             // 
-            // richTextBox1
+            // Txt_Link
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(162, 55);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(100, 25);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.Txt_Link.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Link.Location = new System.Drawing.Point(417, 147);
+            this.Txt_Link.Name = "Txt_Link";
+            this.Txt_Link.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Link.TabIndex = 3;
             // 
-            // textBox3
+            // Txt_Link_Text
             // 
-            this.textBox3.Location = new System.Drawing.Point(162, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.Txt_Link_Text.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Link_Text.Location = new System.Drawing.Point(147, 146);
+            this.Txt_Link_Text.Name = "Txt_Link_Text";
+            this.Txt_Link_Text.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Link_Text.TabIndex = 4;
             // 
-            // textBox4
+            // Txt_Number_Of_Rows
             // 
-            this.textBox4.Location = new System.Drawing.Point(162, 167);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.Txt_Number_Of_Rows.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Number_Of_Rows.Location = new System.Drawing.Point(147, 209);
+            this.Txt_Number_Of_Rows.Name = "Txt_Number_Of_Rows";
+            this.Txt_Number_Of_Rows.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Number_Of_Rows.TabIndex = 5;
             // 
-            // textBox5
+            // Txt_Number_Of_Columns
             // 
-            this.textBox5.Location = new System.Drawing.Point(162, 206);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.Txt_Number_Of_Columns.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Number_Of_Columns.Location = new System.Drawing.Point(417, 210);
+            this.Txt_Number_Of_Columns.Name = "Txt_Number_Of_Columns";
+            this.Txt_Number_Of_Columns.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Number_Of_Columns.TabIndex = 6;
             // 
-            // textBox6
+            // Txt_Table_Data
             // 
-            this.textBox6.Location = new System.Drawing.Point(162, 243);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 6;
+            this.Txt_Table_Data.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Table_Data.Location = new System.Drawing.Point(147, 254);
+            this.Txt_Table_Data.Name = "Txt_Table_Data";
+            this.Txt_Table_Data.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Table_Data.TabIndex = 7;
             // 
-            // textBox7
+            // lbl_Title
             // 
-            this.textBox7.Location = new System.Drawing.Point(162, 278);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 7;
+            this.lbl_Title.AutoSize = true;
+            this.lbl_Title.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Title.Location = new System.Drawing.Point(18, 29);
+            this.lbl_Title.Name = "lbl_Title";
+            this.lbl_Title.Size = new System.Drawing.Size(31, 15);
+            this.lbl_Title.TabIndex = 8;
+            this.lbl_Title.Text = "Title";
             // 
-            // label1
+            // lbl_Paragraph
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Title";
+            this.lbl_Paragraph.AutoSize = true;
+            this.lbl_Paragraph.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Paragraph.Location = new System.Drawing.Point(18, 71);
+            this.lbl_Paragraph.Name = "lbl_Paragraph";
+            this.lbl_Paragraph.Size = new System.Drawing.Size(62, 15);
+            this.lbl_Paragraph.TabIndex = 9;
+            this.lbl_Paragraph.Text = "Paragraph";
             // 
-            // label2
+            // lbl_Image
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Paragraph";
+            this.lbl_Image.AutoSize = true;
+            this.lbl_Image.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Image.Location = new System.Drawing.Point(327, 71);
+            this.lbl_Image.Name = "lbl_Image";
+            this.lbl_Image.Size = new System.Drawing.Size(40, 15);
+            this.lbl_Image.TabIndex = 10;
+            this.lbl_Image.Text = "Image";
+            this.lbl_Image.Click += new System.EventHandler(this.Image_Click);
             // 
-            // label3
+            // lbl_Link
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Image";
+            this.lbl_Link.AutoSize = true;
+            this.lbl_Link.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Link.Location = new System.Drawing.Point(327, 147);
+            this.lbl_Link.Name = "lbl_Link";
+            this.lbl_Link.Size = new System.Drawing.Size(29, 15);
+            this.lbl_Link.TabIndex = 11;
+            this.lbl_Link.Text = "Link";
             // 
-            // label4
+            // lbl_Link_Text
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Link";
+            this.lbl_Link_Text.AutoSize = true;
+            this.lbl_Link_Text.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Link_Text.Location = new System.Drawing.Point(18, 147);
+            this.lbl_Link_Text.Name = "lbl_Link_Text";
+            this.lbl_Link_Text.Size = new System.Drawing.Size(55, 15);
+            this.lbl_Link_Text.TabIndex = 12;
+            this.lbl_Link_Text.Text = "Link Text";
             // 
-            // label5
+            // lbl_Number_Of_Rows
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 174);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Linktext";
+            this.lbl_Number_Of_Rows.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl_Number_Of_Rows.AutoSize = true;
+            this.lbl_Number_Of_Rows.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Number_Of_Rows.Location = new System.Drawing.Point(295, 213);
+            this.lbl_Number_Of_Rows.Name = "lbl_Number_Of_Rows";
+            this.lbl_Number_Of_Rows.Size = new System.Drawing.Size(101, 15);
+            this.lbl_Number_Of_Rows.TabIndex = 13;
+            this.lbl_Number_Of_Rows.Text = "Number Of Rows";
             // 
-            // label6
+            // lbl_Number_Of_Columns
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 213);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "No_Of_Rows";
+            this.lbl_Number_Of_Columns.AutoSize = true;
+            this.lbl_Number_Of_Columns.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Number_Of_Columns.Location = new System.Drawing.Point(0, 215);
+            this.lbl_Number_Of_Columns.Name = "lbl_Number_Of_Columns";
+            this.lbl_Number_Of_Columns.Size = new System.Drawing.Size(119, 15);
+            this.lbl_Number_Of_Columns.TabIndex = 14;
+            this.lbl_Number_Of_Columns.Text = "Number Of Columns";
             // 
-            // label7
+            // lbl_Table_Data
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 246);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "No_Of_Columns";
+            this.lbl_Table_Data.AutoSize = true;
+            this.lbl_Table_Data.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Table_Data.Location = new System.Drawing.Point(18, 262);
+            this.lbl_Table_Data.Name = "lbl_Table_Data";
+            this.lbl_Table_Data.Size = new System.Drawing.Size(63, 15);
+            this.lbl_Table_Data.TabIndex = 15;
+            this.lbl_Table_Data.Text = "Table Data";
             // 
-            // label8
+            // Submit
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 281);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 13);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Table_Data";
+            this.Submit.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.Location = new System.Drawing.Point(188, 344);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(121, 23);
+            this.Submit.TabIndex = 16;
+            this.Submit.Text = "Submit";
+            this.Submit.UseVisualStyleBackColor = true;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
-            // button1
+            // Create_page
             // 
-            this.button1.Location = new System.Drawing.Point(31, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Create_page.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Create_page.Location = new System.Drawing.Point(330, 344);
+            this.Create_page.Name = "Create_page";
+            this.Create_page.Size = new System.Drawing.Size(120, 23);
+            this.Create_page.TabIndex = 17;
+            this.Create_page.Text = "Create HTML Page";
+            this.Create_page.UseVisualStyleBackColor = true;
+            this.Create_page.Click += new System.EventHandler(this.Create_page_Click);
             // 
-            // button2
+            // Add_Paragraph
             // 
-            this.button2.Location = new System.Drawing.Point(162, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "create";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Add_Paragraph.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Paragraph.Location = new System.Drawing.Point(161, 89);
+            this.Add_Paragraph.Name = "Add_Paragraph";
+            this.Add_Paragraph.Size = new System.Drawing.Size(90, 23);
+            this.Add_Paragraph.TabIndex = 18;
+            this.Add_Paragraph.Text = "Add Paragraph";
+            this.Add_Paragraph.UseVisualStyleBackColor = true;
+            this.Add_Paragraph.Click += new System.EventHandler(this.Paragraph_Click);
             // 
-            // Paragraph
+            // Add_Image
             // 
-            this.Paragraph.Location = new System.Drawing.Point(296, 55);
-            this.Paragraph.Name = "Paragraph";
-            this.Paragraph.Size = new System.Drawing.Size(75, 23);
-            this.Paragraph.TabIndex = 18;
-            this.Paragraph.Text = "Paragraph";
-            this.Paragraph.UseVisualStyleBackColor = true;
-            this.Paragraph.Click += new System.EventHandler(this.Paragraph_Click);
+            this.Add_Image.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Image.Location = new System.Drawing.Point(435, 89);
+            this.Add_Image.Name = "Add_Image";
+            this.Add_Image.Size = new System.Drawing.Size(82, 23);
+            this.Add_Image.TabIndex = 19;
+            this.Add_Image.Text = "Add Image";
+            this.Add_Image.UseVisualStyleBackColor = true;
+            this.Add_Image.Click += new System.EventHandler(this.Image_Click);
             // 
-            // Image
+            // Add_Link
             // 
-            this.Image.Location = new System.Drawing.Point(296, 87);
-            this.Image.Name = "Image";
-            this.Image.Size = new System.Drawing.Size(75, 23);
-            this.Image.TabIndex = 19;
-            this.Image.Text = "Image";
-            this.Image.UseVisualStyleBackColor = true;
-            this.Image.Click += new System.EventHandler(this.Image_Click);
+            this.Add_Link.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Link.Location = new System.Drawing.Point(435, 173);
+            this.Add_Link.Name = "Add_Link";
+            this.Add_Link.Size = new System.Drawing.Size(82, 23);
+            this.Add_Link.TabIndex = 20;
+            this.Add_Link.Text = "Add Link";
+            this.Add_Link.UseVisualStyleBackColor = true;
+            this.Add_Link.Click += new System.EventHandler(this.Link_click);
             // 
-            // Link
+            // Txt_Paragraph
             // 
-            this.Link.Location = new System.Drawing.Point(296, 130);
-            this.Link.Name = "Link";
-            this.Link.Size = new System.Drawing.Size(75, 23);
-            this.Link.TabIndex = 20;
-            this.Link.Text = "Link";
-            this.Link.UseVisualStyleBackColor = true;
-            this.Link.Click += new System.EventHandler(this.Link_click);
+            this.Txt_Paragraph.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Paragraph.Location = new System.Drawing.Point(147, 63);
+            this.Txt_Paragraph.Name = "Txt_Paragraph";
+            this.Txt_Paragraph.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Paragraph.TabIndex = 21;
             // 
-            // Form1
+            // Txt_Bg_Colour
+            // 
+            this.Txt_Bg_Colour.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Bg_Colour.Location = new System.Drawing.Point(417, 22);
+            this.Txt_Bg_Colour.Name = "Txt_Bg_Colour";
+            this.Txt_Bg_Colour.Size = new System.Drawing.Size(121, 23);
+            this.Txt_Bg_Colour.TabIndex = 22;
+            // 
+            // lbl_Bg_Colour
+            // 
+            this.lbl_Bg_Colour.AutoSize = true;
+            this.lbl_Bg_Colour.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Bg_Colour.Location = new System.Drawing.Point(309, 29);
+            this.lbl_Bg_Colour.Name = "lbl_Bg_Colour";
+            this.lbl_Bg_Colour.Size = new System.Drawing.Size(73, 15);
+            this.lbl_Bg_Colour.TabIndex = 23;
+            this.lbl_Bg_Colour.Text = "Body Colour";
+            // 
+            // Add_Table
+            // 
+            this.Add_Table.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Table.Location = new System.Drawing.Point(161, 280);
+            this.Add_Table.Name = "Add_Table";
+            this.Add_Table.Size = new System.Drawing.Size(82, 23);
+            this.Add_Table.TabIndex = 24;
+            this.Add_Table.Text = "Add Table";
+            this.Add_Table.UseVisualStyleBackColor = true;
+            this.Add_Table.Click += new System.EventHandler(this.Table_click);
+            // 
+            // Html_Builder_Winform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 403);
-            this.Controls.Add(this.Link);
-            this.Controls.Add(this.Image);
-            this.Controls.Add(this.Paragraph);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(684, 571);
+            this.Controls.Add(this.Add_Table);
+            this.Controls.Add(this.lbl_Bg_Colour);
+            this.Controls.Add(this.Txt_Bg_Colour);
+            this.Controls.Add(this.Txt_Paragraph);
+            this.Controls.Add(this.Add_Link);
+            this.Controls.Add(this.Add_Image);
+            this.Controls.Add(this.Add_Paragraph);
+            this.Controls.Add(this.Create_page);
+            this.Controls.Add(this.Submit);
+            this.Controls.Add(this.lbl_Table_Data);
+            this.Controls.Add(this.lbl_Number_Of_Columns);
+            this.Controls.Add(this.lbl_Number_Of_Rows);
+            this.Controls.Add(this.lbl_Link_Text);
+            this.Controls.Add(this.lbl_Link);
+            this.Controls.Add(this.lbl_Image);
+            this.Controls.Add(this.lbl_Paragraph);
+            this.Controls.Add(this.lbl_Title);
+            this.Controls.Add(this.Txt_Table_Data);
+            this.Controls.Add(this.Txt_Number_Of_Columns);
+            this.Controls.Add(this.Txt_Number_Of_Rows);
+            this.Controls.Add(this.Txt_Link_Text);
+            this.Controls.Add(this.Txt_Link);
+            this.Controls.Add(this.Txt_Image);
+            this.Controls.Add(this.Txt_Title);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "Html_Builder_Winform";
+            this.Text = "Html Builder Winform";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,27 +323,30 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Paragraph;
-        private System.Windows.Forms.Button Image;
-        private System.Windows.Forms.Button Link;
+        private System.Windows.Forms.TextBox Txt_Title;
+        private System.Windows.Forms.TextBox Txt_Image;
+        private System.Windows.Forms.TextBox Txt_Link;
+        private System.Windows.Forms.TextBox Txt_Link_Text;
+        private System.Windows.Forms.TextBox Txt_Number_Of_Rows;
+        private System.Windows.Forms.TextBox Txt_Number_Of_Columns;
+        private System.Windows.Forms.TextBox Txt_Table_Data;
+        private System.Windows.Forms.Label lbl_Title;
+        private System.Windows.Forms.Label lbl_Paragraph;
+        private System.Windows.Forms.Label lbl_Image;
+        private System.Windows.Forms.Label lbl_Link;
+        private System.Windows.Forms.Label lbl_Link_Text;
+        private System.Windows.Forms.Label lbl_Number_Of_Rows;
+        private System.Windows.Forms.Label lbl_Number_Of_Columns;
+        private System.Windows.Forms.Label lbl_Table_Data;
+        private System.Windows.Forms.Button Submit;
+        private System.Windows.Forms.Button Create_page;
+        private System.Windows.Forms.Button Add_Paragraph;
+        private System.Windows.Forms.Button Add_Image;
+        private System.Windows.Forms.Button Add_Link;
+        private System.Windows.Forms.TextBox Txt_Paragraph;
+        private System.Windows.Forms.TextBox Txt_Bg_Colour;
+        private System.Windows.Forms.Label lbl_Bg_Colour;
+        private System.Windows.Forms.Button Add_Table;
     }
 }
 
