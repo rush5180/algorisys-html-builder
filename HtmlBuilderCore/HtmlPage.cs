@@ -24,7 +24,7 @@ namespace HtmlBuilderCore
             {
                 bodyHtml += element.GetHtmlString();
             }
-            return string.Format("<html><head><title>{0}</title></head><body style='background-color:'{1}'>{2}</body></html>", 
+            return string.Format("<html><head><title>{0}</title></head><body style ='background-color: {1}'>{2}</body></html>", 
                 this.Title, 
                 this.BodyColor, 
                 bodyHtml);
