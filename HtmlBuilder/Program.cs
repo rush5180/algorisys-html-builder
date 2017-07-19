@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HtmlBuilder
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -56,7 +56,7 @@ namespace HtmlBuilder
             var html = page.GetPageHtml();
         }
 
-        static void P(string s)
+        public static void P(string s)
         {
             Console.WriteLine(s);
         }
@@ -65,11 +65,11 @@ namespace HtmlBuilder
             P(msg);
             return Console.ReadLine();
         }
-        static int ReadInt(string msg)
+        public static int ReadInt(string msg)
         {
             return Convert.ToInt32(ReadString(msg));
         }
-        static ConsoleKey ReadKey()
+        public static ConsoleKey ReadKey()
         {
             return Console.ReadKey().Key;
         }
